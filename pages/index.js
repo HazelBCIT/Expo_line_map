@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Map from '../components/Map'
+import logoImg from '../assets/Translink.png'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,11 +17,37 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+      <img
+          src={logoImg} 
+          alt="/"
+          width="120"
+          height="120"
+        />
       <div className={styles.header}>
         SkyTrain (Expo Line) Stations
       </div>
+      <div className={styles.body}>
+        Expo Line connects Downtown Vancouver with the cities of Burnaby, New Westminster, and Surrey.
+      </div>
        <Map/>
       </main>
+
+      <footer className={styles.footer}>
+        <div className={styles.body}>
+        Metro Vancouver's transportation network, serving residents and visitors with public transit, major roads, bridges and Trip Planning.
+        </div>
+        <div>
+          <div className={styles.header}>
+            Contact Us
+          </div>
+          <div className={styles.body}>
+          Call us at 604.953.3333
+          <br/>
+          400-287 Nelson's Ct., New Westminster, BC V3L0E7
+          </div>
+        </div>
+
+      </footer>
     </>
   )
 }

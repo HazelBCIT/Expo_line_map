@@ -11,10 +11,10 @@ import { MapContainer, TileLayer, Marker, Popup, Polyline, CircleMarker} from 'r
 
 export default function Map() {
 
-const position = [49.28594, -123.11129];
+const position = [49.2198, -122.9877];
 
 const polyline = [
-  [49.28594, -123.11129],
+  [49.28594, -123.11129], // Waterfront
   [49.2856, -123.1202],// Burrard Station
   [49.2833, -123.1218],// Granville Station
   [49.2743, -123.1056],// Stadium–Chinatown Station
@@ -48,12 +48,12 @@ const blueOption ={ color:'#214b90'};
 const redOption ={ color:'red'};
 
 const getIcon = new L.Icon ({
-  iconUrl: require("../../public/expo-icon.png"),
+  iconUrl: require("../../assets/expo-icon.png"),
   iconSize: [40, 40],
 });
 
   return (
-    <MapContainer className={style.map} center={position} zoom={14} scrollWheelZoom={true}>
+    <MapContainer className={style.map} center={position} zoom={12} scrollWheelZoom={true}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
