@@ -47,10 +47,10 @@ const polyline_KingGeorge = [
 const blueOption ={ color:'#214b90'};
 const redOption ={ color:'red'};
 
-// const getIcon = new L.Icon ({
-//   iconUrl: require("../../public/expo-icon.png"),
-//   iconSize: [40,40]
-// });
+const getIcon = new L.Icon ({
+  iconUrl: require("../../public/expo-icon.png"),
+  iconSize: [40, 40],
+});
 
   return (
     <MapContainer className={style.map} center={position} zoom={14} scrollWheelZoom={true}>
@@ -61,7 +61,7 @@ const redOption ={ color:'red'};
 {/* 
 icon={getIcon} */}
 
-      <Marker position={[49.28594, -123.11129]} >
+      <Marker position={[49.28594, -123.11129]} icon={getIcon}  >
         <Popup>
           <b>Expo Line</b>
           <br/> 
