@@ -302,7 +302,7 @@
   width:100%;
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  padding: 30px;
 }
 
 .body{
@@ -327,13 +327,29 @@
 
 .headCont{
   width:100vw;
-  padding-top: 1rem;
+  padding: 1rem;
   position: fixed; 
   z-index: 10;
   background-color: #f5f5f5;
 }
 .logo{
-  padding-left: 1rem;
   padding-bottom: 0.5rem;
+  margin-right: 1.5rem;
 }
 
+.text{
+  padding-top: 2rem;
+  width:100%;
+}
+.marginbox{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items:center;
+  padding-top: 30px;
+}
