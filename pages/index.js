@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google';
 import styles from '../styles/Home.module.css';
 import Map from '../components/Map';
 import Header from '../components/header';
+import NavBar from '../components/nav_bar';
 import Footer from '../components/footer';
 import Divider from '@mui/material/Divider';
 
@@ -14,6 +15,7 @@ export default function Home() {
   return (
   <>
       <Header />
+      <NavBar />
       <main className={styles.main}>
       
         <div className={styles.header}>
@@ -22,7 +24,7 @@ export default function Home() {
         <div className={styles.body}>
           Expo Line connects Downtown Vancouver with the cities of Burnaby, New Westminster, and Surrey.
         </div>
-        
+
         <Map/>
 
         <div className={styles.text}>
