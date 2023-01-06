@@ -7,8 +7,6 @@ import L from 'leaflet'
 import { MapContainer, TileLayer, Marker, Popup, Polyline, CircleMarker} from 'react-leaflet';
 
 
-
-
 export default function Map() {
 
 const position = [49.2198, -122.9877];
@@ -47,9 +45,9 @@ const polyline_KingGeorge = [
 const blueOption ={ color:'#214b90'};
 const redOption ={ color:'red'};
 
-const getIcon = new L.Icon ({
-  iconUrl: require("../../assets/expo-icon.png"),
-  iconSize: [40, 40],
+const getIcon = new L.icon ({
+  iconUrl: "expo-icon.png",
+  iconSize: [35, 35],
 });
 
   return (
@@ -58,8 +56,7 @@ const getIcon = new L.Icon ({
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-{/* 
-icon={getIcon} */}
+
 
       <Marker position={[49.28594, -123.11129]} icon={getIcon}  >
         <Popup>
@@ -69,7 +66,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2856, -123.1202]} >
+      <Marker position={[49.2856, -123.1202]} icon={getIcon} >
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -77,7 +74,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2833, -123.1218]} >
+      <Marker position={[49.2833, -123.1218]} icon={getIcon} >
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -85,7 +82,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2731, -123.1003]} >
+      <Marker position={[49.2731, -123.1003]} icon={getIcon} >
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -93,7 +90,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2626, -123.0692]} >
+      <Marker position={[49.2626, -123.0692]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -101,7 +98,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2483, -123.0559]} >
+      <Marker position={[49.2483, -123.0559]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -109,7 +106,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2440, -123.0459]} >
+      <Marker position={[49.2440, -123.0459]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -117,7 +114,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2383, -123.0317]} >
+      <Marker position={[49.2383, -123.0317]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -125,7 +122,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2298, -123.0127]} >
+      <Marker position={[49.2298, -123.0127]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -133,7 +130,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2258, -123.0039]} >
+      <Marker position={[49.2258, -123.0039]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -141,7 +138,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2198, -122.9877]} >
+      <Marker position={[49.2198, -122.9877]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -149,7 +146,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2120, -122.9592]} >
+      <Marker position={[49.2120, -122.9592]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -157,7 +154,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2000, -122.9490]} >
+      <Marker position={[49.2000, -122.9490]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -165,7 +162,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2015, -122.9126]} >
+      <Marker position={[49.2015, -122.9126]} icon={getIcon} >
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -173,7 +170,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.20476, -122.9061]} >
+      <Marker position={[49.20476, -122.9061]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -181,7 +178,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2244, -122.8896]} >
+      <Marker position={[49.2244, -122.8896]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -189,7 +186,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2333, -122.8829]} >
+      <Marker position={[49.2333, -122.8829]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -197,7 +194,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2484, -122.8970]} >
+      <Marker position={[49.2484, -122.8970]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -205,7 +202,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.2533, -122.9181]} >
+      <Marker position={[49.2533, -122.9181]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -214,7 +211,7 @@ icon={getIcon} */}
       </Marker>
 
      {/* ---------To King George Station--------- */}
-     <Marker position={[49.2044, -122.8743]} >
+     <Marker position={[49.2044, -122.8743]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -222,7 +219,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.1990, -122.8507]} >
+      <Marker position={[49.1990, -122.8507]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -230,7 +227,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.1896, -122.8480]} >
+      <Marker position={[49.1896, -122.8480]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
@@ -238,7 +235,7 @@ icon={getIcon} */}
         </Popup>
       </Marker>
 
-      <Marker position={[49.1827, -122.8446]} >
+      <Marker position={[49.1827, -122.8446]} icon={getIcon}>
         <Popup>
           <b>Expo Line</b>
           <br/> 
